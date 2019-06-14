@@ -1,0 +1,19 @@
+openapi: 3.0.1
+paths:
+  /:
+    get: {}
+
+  /tasks:
+    get: {}
+    post: {}
+
+  /task
+    get: {}
+    put:
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
